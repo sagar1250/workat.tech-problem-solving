@@ -1,0 +1,62 @@
+#Cube
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.util.Scanner;
+// Please make sure not to delete the WorkAtTech class
+// You can create additional non-public classes as well
+// But the main method should be in the WorkAtTech class
+class WorkAtTech
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		
+		int area = 6*(a*a);
+		int cube = a*a*a;
+		
+		System.out.println( area + " " + cube);
+	}
+}
+
+
+
+### The other Approach
+import java.util.Scanner;
+
+class WorkAtTech{
+    public static void main(String[] args){
+
+        // Use try-with-resources to auto-close the Scanner
+        try(Scanner scanner =  new Scanner(System.in)){
+
+            // Prompt the user for input
+            System.out.println("length of the edge of the cube");
+            int edgeLength = scanner.nextInt();
+
+            // Calculate surface area and volume
+            int surfaceArea = calculateSurfaceArea(edgeLength);
+            int volume = calculateVolume(edgeLength);
+
+            // Output the results
+            System.out.println("surfaceArea :" + surfaceArea);
+            System.out.println("volume :" + volume);
+
+
+        }
+
+    }
+
+    // Function to calculate the surface area
+        private static int calculateSurfaceArea(int edgeLength){
+            return 6 * edgeLength * edgeLength;
+        }
+
+         // Function to calculate the volume
+         private static int calculateVolume(int edgeLength){
+            return edgeLength * edgeLength * edgeLength;
+         }
+}
