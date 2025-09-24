@@ -1,5 +1,7 @@
 Problem: 1
 
+->This is the brute force attack.
+
 Given two numbers a and b. Your task is to return the sum of a and b.
 
 Examples:
@@ -36,3 +38,4 @@ class Solution {
     }
 
 }
+
