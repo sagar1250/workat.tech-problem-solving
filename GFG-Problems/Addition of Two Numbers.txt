@@ -1,4 +1,4 @@
-Problem:
+Problem: 1
 
 Given two numbers a and b. Your task is to return the sum of a and b.
 
@@ -34,4 +34,5 @@ class Solution {
         System.out.println(result);
         
     }
+
 }
